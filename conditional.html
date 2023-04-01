@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    // Conditional Variable
+
+    function ganjilgenap(){
+        let x = prompt(`Masukkan Angka yang ingin dicek`)
+
+        let y = x % 2 === 0 ? "Genap" : "Ganjil";
+        alert(`Angka yang anda input adalah ${y}`)
+    }
+
+    //Map
+    function kuadrat(){
+        const angka = [1, 2, 3, 4, 5];
+
+        const kuadrat = angka.map(num => num ** 2);
+
+        alert(`Map Kuadrat !!!
+        Array asli: ${angka}
+        Array kuadrat: ${kuadrat}`);
+    }
+    //Filter
+    function filterAngka(){
+        const angka = [1, 2, 3, 4, 5];
+        const ganjil = angka.filter(num => num % 2 !== 0);
+        alert(`Filter Angka !!!!
+        Array asli: ${angka}
+        Array Ganjil : ${ganjil}`);
+    }
+
+    ganjilgenap()
+    kuadrat()
+    filterAngka()
+</script>
+</body>
+</html>
